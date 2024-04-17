@@ -1,5 +1,6 @@
 const { REST, Routes } = require('discord.js');
-const { clientId, guildId, token } = require('./jd.json');
+const token = process.env.token
+const clientId = process.env.clientId
 const fs = require('node:fs');
 const path = require('node:path');
 
