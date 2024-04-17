@@ -34,7 +34,7 @@ module.exports = {
 
         await axios.post(r_url, postData, {headers})
             .then(response => {
-                code = response.data.data.short_code;
+                shortened = response.data.data.link;
             })
             .catch(error => {console.error(error);});
 
