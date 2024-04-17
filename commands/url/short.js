@@ -1,6 +1,6 @@
 const {SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const axios = require('axios');
-let {url_api} = require('./../../jd.json');
+let url_api = process.env.url_api
 
 
 module.exports = {
